@@ -13,9 +13,9 @@ GROUPS = [
     "Addis, Etabez & Yodit",
 ]
 
-# Reference: Wednesday May 27, 2026 — first scheduled run at the new 6 PM time;
+# Reference: Wednesday May 20, 2026 — first scheduled run at the new 6 PM time;
 # rotation starts with Frey & Meseret (GROUPS[0]).
-REFERENCE_WEDNESDAY = datetime(2026, 5, 27, tzinfo=timezone.utc)
+REFERENCE_WEDNESDAY = datetime(2026, 5, 20, tzinfo=timezone.utc)
 
 def get_group():
     now = datetime.now(timezone.utc)
