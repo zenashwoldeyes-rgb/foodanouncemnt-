@@ -6,15 +6,15 @@ BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 CHAT_ID   = os.environ["TELEGRAM_CHAT_ID"]
 
 GROUPS = [
-    "Addis, Etabez & Yodit",
     "Frey & Meseret",
     "Mekdes & Zufan",
     "Winta, Mahlet & Hilina",
     "Fikrte, Mita & Aynalem",
+    "Addis, Etabez & Yodit",
 ]
 
-# First announcement Wednesday (announces for Sunday May 17, 2026)
-REFERENCE_WEDNESDAY = datetime(2026, 5, 13, tzinfo=timezone.utc)
+# Reference: Wednesday May 20, 2026 (first announcement for Sunday May 24)
+REFERENCE_WEDNESDAY = datetime(2026, 5, 20, tzinfo=timezone.utc)
 
 def get_group():
     now = datetime.now(timezone.utc)
