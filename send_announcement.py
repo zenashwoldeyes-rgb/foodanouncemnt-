@@ -2,8 +2,8 @@ import os
 import requests
 from datetime import datetime, timezone
 
-BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-CHAT_IDS  = [c.strip() for c in os.environ["TELEGRAM_CHAT_ID"].split(",") if c.strip()]
+BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"].strip().lstrip("﻿")
+CHAT_IDS  = [c.strip().lstrip("﻿") for c in os.environ["TELEGRAM_CHAT_ID"].split(",") if c.strip()]
 
 GROUPS = [
     "Frey & Meseret",
