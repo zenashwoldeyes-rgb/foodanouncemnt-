@@ -2,7 +2,7 @@ name: Wednesday Food Announcement
 
 on:
   schedule:
-    - cron: '30 22 * * 3'  # Every Wednesday 22:30 UTC = 5:30 PM Winnipeg CDT (summer) / 4:30 PM CST (winter)
+    - cron: '0 23 * * 3'  # Every Wednesday 23:00 UTC = 6:00 PM Winnipeg CDT (summer) / 5:00 PM CST (winter)
   workflow_dispatch:        # Lets you test it manually anytime
 
 jobs:
